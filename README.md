@@ -111,8 +111,7 @@ Mapas de risco e rotas de evacuação, APIs com JWT e OAuth2 e deploy em contêi
 ## 📜 Diário de bordo
 
 <p align="center">
-  <img height="165" src="https://github-readme-stats.vercel.app/api?username=RogerAllan&show_icons=true&hide_border=true&include_all_commits=true&count_private=true&locale=pt-br&bg_color=0b0607&title_color=ff5a4f&text_color=e6d5b8&icon_color=c1121f&ring_color=c1121f" alt="Estatísticas do GitHub" />
-  <img height="165" src="https://streak-stats.demolab.com?user=RogerAllan&hide_border=true&locale=pt_BR&background=0B0607&ring=C1121F&fire=FF5A4F&currStreakNum=F3E6D0&sideNums=F3E6D0&currStreakLabel=FF5A4F&sideLabels=E6D5B8&dates=9C8A73&stroke=3A1A17" alt="Sequência de contribuições" />
+  <img height="190" src="https://streak-stats.demolab.com?user=RogerAllan&hide_border=true&locale=pt_BR&background=0B0607&ring=C1121F&fire=FF5A4F&currStreakNum=F3E6D0&sideNums=F3E6D0&currStreakLabel=FF5A4F&sideLabels=E6D5B8&dates=9C8A73&stroke=3A1A17" alt="Sequência de contribuições" />
 </p>
 
 <p align="center">
