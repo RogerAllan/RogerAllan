@@ -1,0 +1,106 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 480" width="1200" height="480" role="img" aria-label="Rota percorrida: trajetória profissional de Roger Allan">
+  <defs>
+    <pattern id="grade" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0 L0 0 0 40" fill="none" stroke="#3a1a17" stroke-width="0.6"/>
+    </pattern>
+    <radialGradient id="fundo" cx="0.5" cy="0.45" r="0.75">
+      <stop offset="0" stop-color="#1c0d0b"/><stop offset="1" stop-color="#080404"/>
+    </radialGradient>
+    <radialGradient id="farol" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#ff3b30" stop-opacity=".55"/><stop offset="1" stop-color="#ff3b30" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="grao"><feTurbulence type="fractalNoise" baseFrequency="0.8" numOctaves="2"/><feColorMatrix values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0.08 0"/></filter>
+    <style>
+      .nome { font-family: Georgia, 'Times New Roman', serif; font-size: 15px; font-weight: 700; letter-spacing: 2px; fill: #f3e6d0; }
+      .per { font-family: Georgia, serif; font-size: 12px; font-style: italic; fill: #ff6a5f; letter-spacing: 1px; }
+      .stk { font-family: Consolas, 'DejaVu Sans Mono', monospace; font-size: 11.5px; fill: #c9ad8f; }
+      .titulo { font-family: Georgia, serif; font-size: 22px; letter-spacing: 8px; fill: #f3e6d0; font-weight: 700; }
+      .rota { stroke-dasharray: 10 9; animation: navegar 2.2s linear infinite; }
+      @keyframes navegar { to { stroke-dashoffset: -38 } }
+      .pulso { animation: pulso 2.6s ease-in-out infinite; transform-origin: 1070px 350px; }
+      @keyframes pulso { 0%,100% { transform: scale(.8); opacity: .5 } 50% { transform: scale(1.25); opacity: 1 } }
+      .bussola { animation: girar 30s linear infinite; transform-origin: 90px 105px; }
+      @keyframes girar { to { transform: rotate(360deg) } }
+    </style>
+  </defs>
+  <rect width="1200" height="480" fill="url(#fundo)"/>
+  <rect width="1200" height="480" fill="url(#grade)"/>
+  <rect x="12" y="12" width="1176" height="456" fill="none" stroke="#5c1418" stroke-width="2"/>
+  <rect x="18" y="18" width="1164" height="444" fill="none" stroke="#3a1a17" stroke-width="1"/>
+
+  <text x="600" y="62" text-anchor="middle" class="titulo">ROTA PERCORRIDA</text>
+  <text x="600" y="84" text-anchor="middle" class="per" font-size="12">diário de navegação · 2023 → hoje</text>
+
+  <g class="bussola" opacity=".8">
+    <circle cx="90" cy="105" r="38" fill="none" stroke="#7a1418" stroke-width="1.2"/>
+    <circle cx="90" cy="105" r="30" fill="none" stroke="#3a1a17" stroke-width="1"/>
+    <path d="M90 63 L97 105 L90 147 L83 105 Z" fill="#c1121f"/>
+    <path d="M48 105 L90 98 L132 105 L90 112 Z" fill="#5c1418"/>
+  </g>
+  <text x="90" y="56" text-anchor="middle" class="per" font-style="normal">N</text>
+
+  <path d="M200 350 C 300 350, 330 205, 430 205 S 570 350, 660 350 S 790 205, 890 205 S 1000 350, 1070 350" fill="none" stroke="#3a1a17" stroke-width="6" stroke-linecap="round"/>
+  <path class="rota" d="M200 350 C 300 350, 330 205, 430 205 S 570 350, 660 350 S 790 205, 890 205 S 1000 350, 1070 350" fill="none" stroke="#c1121f" stroke-width="2.5" stroke-linecap="round"/>
+
+  <g transform="translate(200 350)">
+    <path d="M-58 6 Q-50 -22 -14 -26 Q10 -40 40 -20 Q62 -8 56 10 Q30 30 -10 24 Q-46 26 -58 6 Z" fill="#2a1612" stroke="#7a1418" stroke-width="1.5"/>
+    <path d="M-58 6 Q-50 -22 -14 -26 Q10 -40 40 -20 Q62 -8 56 10 Q30 30 -10 24 Q-46 26 -58 6 Z" fill="none" stroke="#c1121f" stroke-width="0.8" stroke-dasharray="2 3" transform="scale(1.18)" opacity=".5"/>
+    <path d="M-6 -6 L6 6 M6 -6 L-6 6" stroke="#ff5a4f" stroke-width="2.4" stroke-linecap="round"/>
+  </g>
+  <g class="rotulo r0">
+    <text x="215" y="408" text-anchor="middle" class="nome" style="font-size:13px;letter-spacing:1px">PREFEITURA DE BALNEÁRIO CAMBORIÚ</text>
+    <text x="215" y="426" text-anchor="middle" class="per">mar/2023 – ago/2024</text>
+    <text x="215" y="443" text-anchor="middle" class="stk">Defesa Civil · Spring Boot · PostGIS · K8s</text>
+  </g>
+  <g transform="translate(430 205)">
+    <path d="M-44 4 Q-40 -18 -8 -22 Q24 -30 44 -6 Q50 14 18 20 Q-20 26 -44 4 Z" fill="#2a1612" stroke="#7a1418" stroke-width="1.5"/>
+    <path d="M-44 4 Q-40 -18 -8 -22 Q24 -30 44 -6 Q50 14 18 20 Q-20 26 -44 4 Z" fill="none" stroke="#c1121f" stroke-width="0.8" stroke-dasharray="2 3" transform="scale(1.18)" opacity=".5"/>
+    <path d="M-6 -6 L6 6 M6 -6 L-6 6" stroke="#ff5a4f" stroke-width="2.4" stroke-linecap="round"/>
+  </g>
+  <g class="rotulo r1">
+    <text x="430" y="113" text-anchor="middle" class="nome">BEAN SOFTWARES</text>
+    <text x="430" y="131" text-anchor="middle" class="per">ago/2024 – out/2024</text>
+    <text x="430" y="148" text-anchor="middle" class="stk">TypeScript · React · C# · SQL Server</text>
+  </g>
+  <g transform="translate(660 350)">
+    <path d="M-50 0 Q-44 -24 -6 -22 Q30 -34 50 -8 Q58 16 22 22 Q-24 30 -50 0 Z" fill="#2a1612" stroke="#7a1418" stroke-width="1.5"/>
+    <path d="M-50 0 Q-44 -24 -6 -22 Q30 -34 50 -8 Q58 16 22 22 Q-24 30 -50 0 Z" fill="none" stroke="#c1121f" stroke-width="0.8" stroke-dasharray="2 3" transform="scale(1.18)" opacity=".5"/>
+    <path d="M-6 -6 L6 6 M6 -6 L-6 6" stroke="#ff5a4f" stroke-width="2.4" stroke-linecap="round"/>
+  </g>
+  <g class="rotulo r2">
+    <text x="660" y="408" text-anchor="middle" class="nome">TEAR ESCOLA DE NEGÓCIOS</text>
+    <text x="660" y="426" text-anchor="middle" class="per">abr/2025 – jul/2025</text>
+    <text x="660" y="443" text-anchor="middle" class="stk">Laravel · Vue · IA aplicada</text>
+  </g>
+  <g transform="translate(890 205)">
+    <path d="M-62 4 Q-56 -26 -16 -28 Q18 -44 54 -22 Q74 -4 62 14 Q34 34 -8 28 Q-50 30 -62 4 Z" fill="#2a1612" stroke="#7a1418" stroke-width="1.5"/>
+    <path d="M-62 4 Q-56 -26 -16 -28 Q18 -44 54 -22 Q74 -4 62 14 Q34 34 -8 28 Q-50 30 -62 4 Z" fill="none" stroke="#c1121f" stroke-width="0.8" stroke-dasharray="2 3" transform="scale(1.18)" opacity=".5"/>
+    <path d="M-6 -6 L6 6 M6 -6 L-6 6" stroke="#ff5a4f" stroke-width="2.4" stroke-linecap="round"/>
+  </g>
+  <g class="rotulo r3">
+    <text x="890" y="113" text-anchor="middle" class="nome">FUZABALTA</text>
+    <text x="890" y="131" text-anchor="middle" class="per">abr/2025 – hoje</text>
+    <text x="890" y="148" text-anchor="middle" class="stk">~30 sistemas · 160+ contêineres · IA</text>
+  </g>
+
+  <!-- próxima ilha -->
+  <circle class="pulso" cx="1070" cy="350" r="60" fill="url(#farol)"/>
+  <g transform="translate(1070 350)">
+    <path d="M-40 2 Q-36 -20 -4 -22 Q26 -28 42 -6 Q48 14 16 20 Q-18 26 -40 2 Z" fill="#1a0d0b" stroke="#ff5a4f" stroke-width="1.5" stroke-dasharray="4 4"/>
+    <text x="0" y="9" text-anchor="middle" font-family="Georgia, serif" font-size="26" font-weight="700" fill="#ff5a4f">?</text>
+  </g>
+  <text x="1060" y="408" text-anchor="middle" class="nome" style="font-size:13px;letter-spacing:1px">PRÓXIMA TRIPULAÇÃO</text>
+  <text x="1060" y="426" text-anchor="middle" class="per">remoto · aberto a propostas</text>
+
+  <!-- navio percorrendo a rota -->
+  <g>
+    <g transform="translate(-14 -22)">
+      <path d="M2 16 L26 16 L22 24 L6 24 Z" fill="#f3e6d0"/>
+      <rect x="13" y="0" width="2" height="16" fill="#f3e6d0"/>
+      <path d="M15 2 Q26 8 15 14 Z" fill="#c1121f"/>
+    </g>
+    <animateMotion dur="16s" repeatCount="indefinite" path="M200 350 C 300 350, 330 205, 430 205 S 570 350, 660 350 S 790 205, 890 205 S 1000 350, 1070 350"/>
+  </g>
+
+  <rect width="1200" height="480" filter="url(#grao)"/>
+</svg>

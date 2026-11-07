@@ -1,0 +1,155 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400" width="1200" height="400" role="img" aria-label="Roger Allan, Engenheiro de Software">
+  <defs>
+    <linearGradient id="ceu" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#050304"/>
+      <stop offset="0.55" stop-color="#1a0607"/>
+      <stop offset="0.8" stop-color="#3d0a0c"/>
+      <stop offset="1" stop-color="#120405"/>
+    </linearGradient>
+    <radialGradient id="corona" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0.55" stop-color="#ff2a2a" stop-opacity="0"/>
+      <stop offset="0.68" stop-color="#ff3b30" stop-opacity="0.95"/>
+      <stop offset="0.78" stop-color="#b3121b" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#5c0a0e" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="halo" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#c1121f" stop-opacity="0.45"/>
+      <stop offset="1" stop-color="#c1121f" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="mar" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1c0708"/>
+      <stop offset="1" stop-color="#060203"/>
+    </linearGradient>
+    <linearGradient id="reflexo" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ff3b30" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#ff3b30" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="lamina" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#2a2627"/>
+      <stop offset="0.5" stop-color="#5a5455"/>
+      <stop offset="1" stop-color="#1d1a1b"/>
+    </linearGradient>
+    <filter id="brilho" x="-20%" y="-50%" width="140%" height="200%">
+      <feGaussianBlur stdDeviation="6" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="grao">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch"/>
+      <feColorMatrix values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0.09 0"/>
+    </filter>
+    <style>
+      .estrela { fill: #f3e6d0; animation: piscar 4s ease-in-out infinite; }
+      .e2 { animation-delay: 1.3s; } .e3 { animation-delay: 2.6s; }
+      @keyframes piscar { 0%,100% { opacity: .15 } 50% { opacity: .9 } }
+      .pulso { animation: pulso 5s ease-in-out infinite; transform-origin: 1010px 118px; }
+      @keyframes pulso { 0%,100% { opacity: .75; transform: scale(1) } 50% { opacity: 1; transform: scale(1.04) } }
+      .onda1 { animation: mover 9s linear infinite; }
+      .onda2 { animation: mover 14s linear infinite reverse; }
+      @keyframes mover { from { transform: translateX(0) } to { transform: translateX(-200px) } }
+      .navio { animation: balanco 6s ease-in-out infinite; transform-origin: 1010px 300px; }
+      @keyframes balanco { 0%,100% { transform: rotate(-1.6deg) translateY(0) } 50% { transform: rotate(1.6deg) translateY(3px) } }
+      .bandeira { animation: tremular 1.6s ease-in-out infinite; transform-origin: 1003px 196px; }
+      @keyframes tremular { 0%,100% { transform: skewY(0deg) scaleX(1) } 50% { transform: skewY(-5deg) scaleX(.93) } }
+      .titulo { font-family: Georgia, 'Times New Roman', serif; font-weight: 700; letter-spacing: 10px; fill: #f3e6d0; }
+      .sub { font-family: Georgia, 'Times New Roman', serif; letter-spacing: 4px; fill: #d9b99b; }
+      .mono { font-family: Consolas, 'DejaVu Sans Mono', monospace; fill: #ff5a4f; letter-spacing: 2px; }
+      .cursor { animation: cursor 1s steps(1) infinite; }
+      @keyframes cursor { 50% { opacity: 0 } }
+      .gume { animation: gume 4.5s ease-in-out infinite; }
+      @keyframes gume { 0% { transform: translateY(150px); opacity: 0 } 30% { opacity: .9 } 60%,100% { transform: translateY(-40px); opacity: 0 } }
+      .brasa { fill: #ff4b3a; animation: subir 7s linear infinite; }
+      .b2 { animation-delay: 2s; animation-duration: 9s } .b3 { animation-delay: 4s; animation-duration: 8s } .b4 { animation-delay: 5.5s }
+      @keyframes subir { 0% { transform: translateY(0); opacity: 0 } 15% { opacity: .9 } 100% { transform: translateY(-260px); opacity: 0 } }
+    </style>
+  </defs>
+
+  <rect width="1200" height="400" fill="url(#ceu)"/>
+
+  <!-- estrelas -->
+  <g>
+    <circle class="estrela" cx="70" cy="40" r="1.3"/>
+    <circle class="estrela e2" cx="190" cy="85" r="1"/>
+    <circle class="estrela e3" cx="320" cy="30" r="1.4"/>
+    <circle class="estrela" cx="455" cy="70" r="1"/>
+    <circle class="estrela e2" cx="590" cy="25" r="1.2"/>
+    <circle class="estrela e3" cx="660" cy="95" r="0.9"/>
+    <circle class="estrela" cx="1000" cy="40" r="1.2"/>
+    <circle class="estrela e2" cx="1100" cy="90" r="1"/>
+    <circle class="estrela e3" cx="1165" cy="30" r="1.3"/>
+    <circle class="estrela" cx="720" cy="45" r="1"/>
+  </g>
+
+  <!-- eclipse -->
+  <circle cx="1010" cy="118" r="190" fill="url(#halo)"/>
+  <g class="pulso">
+    <circle cx="1010" cy="118" r="96" fill="url(#corona)"/>
+  </g>
+  <circle cx="1010" cy="118" r="62" fill="#030102"/>
+  <circle cx="1010" cy="118" r="62" fill="none" stroke="#ff6a5f" stroke-width="1.2" stroke-opacity=".8"/>
+
+  <!-- reflexo do eclipse no mar -->
+  <rect x="960" y="292" width="100" height="108" fill="url(#reflexo)" opacity=".7"/>
+
+  <!-- penhasco com a espada fincada -->
+  <g transform="translate(150 112) scale(1.12)">
+    <!-- lâmina larga -->
+    <path d="M-17 0 L17 0 L17 146 L0 162 L-17 146 Z" fill="url(#lamina)" stroke="#0a0808" stroke-width="2"/>
+    <path d="M0 4 L0 150" stroke="#7d7576" stroke-width="1.5" opacity=".6"/>
+    <clipPath id="cortelamina"><path d="M-17 0 L17 0 L17 146 L0 162 L-17 146 Z"/></clipPath>
+    <g clip-path="url(#cortelamina)"><rect class="gume" x="-20" y="0" width="40" height="18" fill="#ff5a4f" opacity=".0"/></g>
+    <!-- guarda e cabo -->
+    <rect x="-38" y="-10" width="76" height="12" rx="2" fill="#1b1617" stroke="#0a0808" stroke-width="2"/>
+    <rect x="-6" y="-60" width="12" height="50" fill="#2b1a17"/>
+    <path d="M-6 -55 L6 -50 M-6 -45 L6 -40 M-6 -35 L6 -30 M-6 -25 L6 -20" stroke="#120b0a" stroke-width="2"/>
+    <circle cx="0" cy="-66" r="9" fill="#1b1617" stroke="#0a0808" stroke-width="2"/>
+  </g>
+
+  <path d="M0 400 L0 268 Q40 250 90 262 Q140 236 190 262 Q230 258 262 284 L300 312 L340 400 Z" fill="#0b0405"/>
+
+  <!-- brasas -->
+  <circle class="brasa" cx="140" cy="300" r="2"/>
+  <circle class="brasa b2" cx="175" cy="300" r="1.6"/>
+  <circle class="brasa b3" cx="120" cy="305" r="1.4"/>
+  <circle class="brasa b4" cx="200" cy="310" r="1.8"/>
+
+  <!-- mar -->
+  <rect x="0" y="292" width="1200" height="108" fill="url(#mar)" opacity=".92"/>
+  <g class="onda2" opacity=".55">
+    <path d="M0 312 q50 -10 100 0 t100 0 t100 0 t100 0 t100 0 t100 0 t100 0 t100 0 t100 0 t100 0 t100 0 t100 0 t100 0 t100 0 V400 H0 Z" fill="#2a0a0c"/>
+  </g>
+
+  <!-- navio -->
+  <g class="navio">
+    <path d="M930 296 L1095 296 L1078 328 L948 328 Z" fill="#070304"/>
+    <path d="M922 290 L1102 290 L1095 297 L930 297 Z" fill="#170809"/>
+    <rect x="1001" y="168" width="4" height="124" fill="#0b0506"/>
+    <rect x="958" y="210" width="3" height="80" fill="#0b0506"/>
+    <path d="M1005 182 Q1050 210 1005 262 Z" fill="#1d0b0c" stroke="#3a1315" stroke-width="1.5"/>
+    <path d="M1001 186 Q956 216 1001 270 Z" fill="#170809" stroke="#3a1315" stroke-width="1.5"/>
+    <path d="M961 222 Q930 244 961 284 Z" fill="#170809" stroke="#3a1315" stroke-width="1.5"/>
+    <!-- bandeira original: caveira com duas lâminas e chaves de código -->
+    <g class="bandeira">
+      <rect x="1005" y="150" width="56" height="38" fill="#0a0506" stroke="#5c1418" stroke-width="1"/>
+      <path d="M1013 158 L1053 182 M1053 158 L1013 182" stroke="#d9c7ab" stroke-width="3" stroke-linecap="round"/>
+      <circle cx="1033" cy="166" r="8" fill="#d9c7ab"/>
+      <rect x="1028" y="171" width="10" height="6" rx="1.5" fill="#d9c7ab"/>
+      <circle cx="1030" cy="165" r="2" fill="#0a0506"/>
+      <circle cx="1036" cy="165" r="2" fill="#0a0506"/>
+      <text x="1033" y="186" text-anchor="middle" font-family="Consolas, monospace" font-size="7" fill="#ff5a4f">&lt;/&gt;</text>
+    </g>
+  </g>
+
+  <g class="onda1">
+    <path d="M0 330 q50 -9 100 0 t100 0 t100 0 t100 0 t100 0 t100 0 t100 0 t100 0 t100 0 t100 0 t100 0 t100 0 t100 0 t100 0 V400 H0 Z" fill="#0c0405"/>
+    <path d="M0 330 q50 -9 100 0 t100 0 t100 0 t100 0 t100 0 t100 0 t100 0 t100 0 t100 0 t100 0 t100 0 t100 0 t100 0 t100 0" fill="none" stroke="#7a1418" stroke-width="1.2" opacity=".7"/>
+  </g>
+
+  <!-- texto -->
+  <text x="330" y="168" class="titulo" font-size="58" filter="url(#brilho)">ROGER ALLAN</text>
+  <rect x="332" y="186" width="420" height="2" fill="#c1121f"/>
+  <text x="332" y="218" class="sub" font-size="17">ENGENHEIRO DE SOFTWARE</text>
+  <text x="332" y="244" class="sub" font-size="14" opacity=".8">BACK-END PYTHON · FULL STACK · INFRAESTRUTURA</text>
+  <text x="332" y="276" class="mono" font-size="14">$ uptime → ~30 sistemas · 160+ contêineres<tspan class="cursor">▌</tspan></text>
+
+  <rect width="1200" height="400" filter="url(#grao)"/>
+</svg>
